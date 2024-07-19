@@ -1,0 +1,21 @@
+# Singleton
+
+El patron singleton es un patron creacional que nos permite asegurarnos de que una clase es instanciada una sola vez. Al mismo tiempo, ofrece acceso global a esta instancia. 
+
+Llevandolo al mundo real, pensa que cosas solo pueden existir una vez. Es decir, algo que solo pueda haber 1 unidad... 
+
+
+
+### Que problema resuelve?
+
+1. En primer lugar, como mencionaba antes, asgura que la clase sea instanciada una sola vez. Basicamente, cuando queramos crear un objeto, en lugar de devolvernos uno nuevo, nos va a devolver el que ya esta instanciado. 
+
+2. Como segundo punto, tambien nos permite acceder de manera global a esa instancia pero protegiendola de ser reescrita.
+
+
+### Que solucion ofrece? 
+
+Todas las implementaciones del Singelton tienen dos cosas en comun:
+
+- Constructor privado para prevenir que otros objetos usen el 'new'
+- Metodo estatico que actua como constructor. Basicamente, este metodo llama al constructor privado y guarda la instancia en una variable estatica. Esta es la instancia que vamos a obtener cada vez que llamemos devuelta al metodo.

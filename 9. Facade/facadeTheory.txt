@@ -1,0 +1,12 @@
+# Facade
+
+EL patron Facade es super analogo a la realidad. Un ejemplo es cuando llamamos por telefono a algun tipo de call center para solicitar o realizar alguna consulta sobre sus servicios. La persona que nos atiende actua como intermediario entre nosotros, cliente, y los servicios o el sistema.
+
+Es decir, en vez de nosotros tener que interactuar con una gran cantidad de servicios y tener que conocer que hace cada una, como funciona, para que sirve y demas, interactuamos con el operador telefonico para que el se encargue de esa relacion a bajo nivel.
+
+Algo asi sucede con el facade ya que este patron nos ofrece una interfaz muy simple para que el cliente o usuario interactue con nuestro sistema sin necesidad de conocer que metodos tenemos internamente. 
+
+Es un constante trade-off entre funcionalidad y simplicidad.
+
+Algo a tener en cuenta es que si el facade se vuelve muy grande, podemos pensar en dividirlo y tener otro facade. Entre ellos tambien pueden comunicarse!
+
