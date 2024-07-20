@@ -1,0 +1,26 @@
+# Strategy
+
+The Strategy pattern lets us indirectly alter the object's behaviour at runtime by associating it with different sub-objects which can perform specific sub-tasks in different ways.
+
+This patterns suggests us to take a class that does something specific but in a lot of different ways and extract all of these algorithms into separate classes called strategies.
+
+### When to use it?
+
+1. When you want to use different variants of an algorithm within an object and be able to switch from one algorithm to another during runtime
+2. When you have a lot of similar classes that only differ in the way they execute some behavior
+3.When your class has a massive conditional statement that switches between different variants of the same algorithm
+
+### A real-world analogy:
+Imagine you have to get to your work office. Here, the main action is, let's say, 'travel'. But the problem is that we can 'travel' in a lot of different ways such as by car, walking,, train, etc. These are our strategies. And can be more in the future! That is because using a strategy design is a good option
+
+### How can we implement it?
+
+1. First, we have our 'Context' class that has three main elements:
+  - a. An attribute to make reference and store the Strategy interface
+  - b. A method to set and change between the different strategies
+  - c. That general action (in our example would be 'travel()')
+
+2. Then we have a Strategy interface that includes a method the context uses to execute a strategy
+
+3. Last but not least, we have the concrete strategies which implements different variations of an algorithm the context uses
+

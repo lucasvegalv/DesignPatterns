@@ -1,0 +1,13 @@
+# Adapter
+
+The Adapter allows us to use 3rd-party and/or legacy classes or any other classes with a weird interface that is not compatible with our code.
+
+It works as an intermediator or translator between that 3rd-party code and ours so they can interact between each other.
+
+We will have this elements:
+
+  - 1. Target: The interface (3rd-party/legacy) that we want to use
+  - 2. Adaptee: Our existing class that needs to be adapted
+  - 3. Adapter: This class is in charge of adapting the interface of 'Adaptee' to the interface of 'Target'
+
+Basically, we will implement the 3rd-party interface with our Adapter class. Then, we will instantiate our class we want to adapt and finally we will implement the 3rd-party interface method calling our class method

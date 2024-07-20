@@ -22,7 +22,7 @@ public class SoundSystem {
 
   public void setVolume(int level) {
     System.out.println("Sound system volume set to " + level);
-}
+  }
 }
 
 
@@ -37,7 +37,7 @@ public class DVDPlayer {
 
   public void play(String movie) {
     System.out.println("Playing movie: " + movie);
-}
+  }
 }
 
 
