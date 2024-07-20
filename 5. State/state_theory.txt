@@ -1,0 +1,19 @@
+# State
+
+This pattern lets an object alter its behavior when its internal state changes.
+
+Let's say, for example, a Document. A document can be in of three states: Draft, Moderation and Published. The publish method of the document works differently depending on which state the document is:
+
+  - 1. In Draft: It moves the document to Moderation
+  - 2. In Moderation: It moves the document to Published
+  - 3. In Published: It doesn't do anything
+
+The design pattern suggests us to create new classes for all these different and possible states of an object and extract all state-specific behavior into these classes.
+
+It seems similar to the Strategy pattern where we have specific implementations for the different strategies. But there is a key difference, here the different states are aware of each other and initiate transitions from one state to another. In the strategy pattern, the strategies never know about each other.
+
+Elements:
+
+  - a. Context: Stores a reference to the interface so it has a state. It also has a setter so it can change between states
+  - b. State Interface: It declares the state-specific methods. This means that if we have lots of methods in our context, in this interface we will just have the ones that can change based on the state.
+  - c. Concrete State: These provide their own implementations for the state-specific methods. It

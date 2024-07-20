@@ -1,0 +1,12 @@
+# Composite
+
+This pattern is useful when our app is like a tree and we can treat each part of it the same way.
+
+It includes some elements:
+
+  - 1. Component Interface: The common interface for the concrete elements and the groups. Its purpose is to offer to a 3rd-user a simple way to use the individual and compose elements the same way
+  - 2. Leaf: These elements are those that are at the final (no more sons) and they implement the interface's methods. The leafs use to do the hard work because they don't delegate their work in any child
+  - 3. Composite: It also implements the component interface. It has a Component's collection so it can include leafs or other components! When it receives a message, delegates the work, collect the responses and return a final answer.
+
+
+An example of this is a File System where it can have files or even other directories. Also, files and directories have common methods or operations but just directories can store other directories.
