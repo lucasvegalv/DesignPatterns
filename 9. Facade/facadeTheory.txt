@@ -9,4 +9,3 @@ Algo asi sucede con el facade ya que este patron nos ofrece una interfaz muy sim
 Es un constante trade-off entre funcionalidad y simplicidad.
 
 Algo a tener en cuenta es que si el facade se vuelve muy grande, podemos pensar en dividirlo y tener otro facade. Entre ellos tambien pueden comunicarse!
-
