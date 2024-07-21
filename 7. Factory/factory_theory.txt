@@ -1,0 +1,13 @@
+# Factory method
+
+This patterns allows us to couple in just one method the objects creation that has a common interface.
+
+
+
+It's suggests that you replace direct object construction calls ('new' operator) with calls to a special factory method. These objects are still being created with the 'new' operator, but its called from within the factory method
+
+### Elements:
+
+  - 1. Factory Method: Method from some class that have the responsability to instantiate a class. 
+  - 2. Product Interface: Common interface to the classes that needs to be instantiated the easy way
+  - 3. Concrete Products: Concrete classes that implement the product interface

@@ -1,0 +1,18 @@
+# Observer
+
+This patterns allows us to define a subscription mechanism to notify multiple objects about any events that happen to the object they’re observing.
+
+Imagine that you subscribe to a newspaper. That way, you no longer need to go to the store to check if the next issue is available. Instead, the publisher sends new issues directly to your mailbox right after publication or even in advance.
+
+The publisher maintains a list of subscribers and knows which magazines they're interested in. Subscriber can leave the list at any time they wish to stop the publisher sending new magazine issues to them.
+
+### Structure:
+
+  - 1. Publisher: It contains a subscription infrastructure that lets new subscribers join and current subscribers leave the list. Also, it issues events of interest to other objects. When a new event happens, the publisher goes over the subscription list and calls the notification method declared in the subscription interface.
+  - 2. Subscriber Interface: It declares the notification method. In most cases, in consist of a single update() method.
+  - 3. Concrete Subscribers: They perform some actions in response to notifications issued by the publisher.
+
+
+### When to use it?
+
+Use this pattern when changes ypu want to do some actions in result of some state changes from an object.
